@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navigation = () => (
@@ -12,9 +12,9 @@ const Navigation = () => (
           <h1 className="logo-title">Space Travelers&apos Hub</h1>
         </div>
         <ul>
-          <li><Link to="/">Rockets</Link></li>
-          <li><Link to="/missions">Missions</Link></li>
-          <li><Link to="/profile">My profile</Link></li>
+          <li><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to="/">Rockets</NavLink></li>
+          <li><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to="/missions">Missions</NavLink></li>
+          <li><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to="/profile">My profile</NavLink></li>
         </ul>
       </div>
     </nav>

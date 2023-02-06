@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-active {
+  text-decoration: underline;
+}

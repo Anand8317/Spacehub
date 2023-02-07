@@ -1,7 +1,12 @@
 import React from 'react';
+import Mission from '../components/Missions';
 
 const Missions = () => (
-  <div />
+  <>
+    <div>
+      <Mission />
+    </div>
+  </>
 
 );
 

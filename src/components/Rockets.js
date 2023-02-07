@@ -1,17 +1,26 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchRockets } from '../redux/rockets/rockets';
+import PropTypes from 'prop-types';
 
-const Rocket = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
-  return (
-    <div>
-      <h1>SpaceX rockets</h1>
+const RocketsList = ({
+  title, description, image,
+}) => (
+  <div>
+    <div className="rocketContainer">
+      <img src={image} alt={title} />
+      <div className="rocketInfo">
+        <h3>{title}</h3>
+        <p>
+          {description}
+        </p>
+      </div>
     </div>
-  );
+
+  </div>
+);
+
+RocketsList.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
-export default Rocket;
+export default RocketsList;

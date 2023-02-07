@@ -1,30 +1,21 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import fetchRockets from '../../services/rocketsService';
 
-const FETCH_ROCKETS = ' FETCH_ROCKETS';
-const initialState = [];
+const FETCH_ROCKETS = 'FETCH_ROCKETS';
+const initialState = { rocket: [] };
 
-export const fetchRockets = createAsyncThunk(
+export const showRockets = createAsyncThunk(
   FETCH_ROCKETS,
-  async (_, { dispatch }) => {
-    const response = await fetch('https://api.spacexdata.com/v3/rockets');
-    const data = await response.json();
-    const rockets = data.map((item) => ({
-      id: item.rocket_id,
-      name: item.rocket_name,
-      type: item.rocket_type,
-      image: item.flickr_images[0],
-    }));
-    dispatch({
-      type: FETCH_ROCKETS,
-      payload: rockets,
-    });
+  async (post, thunkAPI) => {
+    const payload = await fetchRockets();
+    thunkAPI.dispatch({ type: FETCH_ROCKETS, payload });
   },
 );
 
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_ROCKETS.fulfilled:
-      return action.payload;
+    case FETCH_ROCKETS:
+      return { ...state, rocket: action.payload };
     default:
       return state;
   }

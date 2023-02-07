@@ -18,7 +18,6 @@ export const fetchRockets = createAsyncThunk(
       type: FETCH_ROCKETS,
       payload: rockets,
     });
-    console.log(rockets);
   },
 );
 

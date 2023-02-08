@@ -26,8 +26,10 @@ const Mission = () => {
         {mission.map((item) => (
           <MissionItem
             key={item.mission_id}
+            id={item.mission_id}
             missionName={item.mission_name}
             missionDesc={item.description}
+            reserved={item.reserved ? item.reserved : false}
           />
         ))}
       </tbody>

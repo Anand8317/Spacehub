@@ -8,7 +8,6 @@ const RocketsList = ({
   const dispatch = useDispatch();
   const HandlerBtn = () => {
     dispatch(reserveRocket(id));
-    console.log(reserved);
   };
   return (
     <div>

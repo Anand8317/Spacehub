@@ -27,7 +27,6 @@ export const reserveRocket = (id) => (dispatch, getState) => {
   });
 };
 
-
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:

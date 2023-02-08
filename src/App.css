@@ -12,10 +12,11 @@
 ul {
   display: flex;
   align-items: center;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 
 .links {
+  width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid rgb(182, 182, 182);
 }
@@ -37,6 +38,11 @@ li a {
   color: rgb(18, 125, 212);
   font-weight: 700;
   text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: rgb(18, 212, 186);
 }
 
 li:last-child {
@@ -47,14 +53,40 @@ li:last-child {
 .rocketContainer {
   display: flex;
   gap: 20px;
+  width: 98%;
+  margin-left: 2%;
 }
 
 .rocketContainer img {
-  width: 30%;
+  width: 25%;
 }
 
 h3 {
-  margin: 0;
+  margin-top: 0;
+}
+
+.reserveBtn {
+  padding: 1%;
+  color: white;
+  background: rgb(20, 131, 196);
+  border-radius: 10px;
+  border: none;
+}
+
+#reserved {
+  background: rgb(75, 172, 236);
+  padding: 0.5rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+#reserve {
+  background: rgb(0, 106, 255);
+  color: white;
+  border: none;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .link-active {

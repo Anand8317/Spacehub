@@ -56,3 +56,20 @@ li:last-child {
 h3 {
   margin: 0;
 }
+
+.link-active {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
+
+table {
+  width: 95% !important;
+  margin: 0 auto;
+}
+
+.center {
+  top: 50%;
+}

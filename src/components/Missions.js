@@ -4,16 +4,20 @@ import Table from 'react-bootstrap/Table';
 import { fetchMissonsAction } from '../redux/missions/missions';
 import MissionItem from './MissionItem';
 
+let flag = false;
 const Mission = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissonsAction());
+    if (!flag) {
+      dispatch(fetchMissonsAction());
+      flag = true;
+    }
   }, [dispatch]);
 
   const mission = useSelector((state) => state.missions);
 
   return (
-    <Table striped bordered hover responsive="sm">
+    <Table className="table1" striped bordered hover responsive="sm">
       <thead>
         <tr>
           <th>Mission</th>

@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
 import Profile from './pages/Profile';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

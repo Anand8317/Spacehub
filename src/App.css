@@ -115,6 +115,7 @@ h3 {
   justify-content: space-around;
 }
 
-.mission-table, .rocket-table {
+.mission-table,
+.rocket-table {
   width: 30% !important;
 }

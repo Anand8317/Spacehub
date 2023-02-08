@@ -6,6 +6,7 @@ const fetchRockets = async () => {
     name: item.rocket_name,
     description: item.description,
     image: item.flickr_images[0],
+    reserved: false,
   }));
   return rockets;
 };

@@ -4,12 +4,11 @@ import logo from '../assets/logo.png';
 
 const Navigation = () => (
   <div>
-
     <nav className="navbar">
       <div className="links">
         <div className="logo">
           <img src={logo} className="logo-pic" alt="spacehub-logo" />
-          <h1 className="logo-title">Space Travelers&apos Hub</h1>
+          <h1 className="logo-title">Space Travelers&apos; Hub</h1>
         </div>
         <ul>
           <li><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to="/">Rockets</NavLink></li>
@@ -18,7 +17,6 @@ const Navigation = () => (
         </ul>
       </div>
     </nav>
-
   </div>
 );
 

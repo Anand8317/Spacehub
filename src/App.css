@@ -97,7 +97,7 @@ h3 {
   text-decoration: none;
 }
 
-table {
+.table1 {
   width: 95% !important;
   margin: 0 auto;
 }
@@ -108,4 +108,13 @@ table {
 
 .am-btn {
   background-color: #18a2b8 !important;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mission-table, .rocket-table {
+  width: 30% !important;
 }

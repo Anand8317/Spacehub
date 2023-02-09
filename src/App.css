@@ -32,8 +32,7 @@ ul {
 }
 
 @keyframes rotatelogo {
-  50% {transform: rotate(200deg);}
-
+  50% { transform: rotate(200deg); }
 }
 
 li {

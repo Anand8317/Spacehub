@@ -134,3 +134,60 @@ h3 {
 .rocket-table {
   width: 30% !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .logo-pic {
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  li a {
+    font-size: 0.7rem;
+  }
+
+  .rocketContainer {
+    margin: 40px 0;
+  }
+
+  h3,
+  th {
+    color: rgb(58, 74, 88);
+  }
+
+  .rocketContainer img {
+    width: 150px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #reserve,
+  #cancel,
+  #reserved {
+    font-size: 0.8rem;
+  }
+
+  .missionName,
+  .missionDesc {
+    font-size: 0.7rem;
+  }
+
+  .missionName {
+    font-weight: bolder;
+  }
+
+  .btn {
+    font-size: 0.4rem;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: rgb(85, 43, 30);
+  }
+}

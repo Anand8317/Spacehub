@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import RocketsList from '../components/Rockets';
 
 const Rockets = () => {
-  // const rockets = useSelector((state) => state.rockets.rocket);
+  const rockets = useSelector((state) => state.rockets.rocket);
 
   return (
     <div>

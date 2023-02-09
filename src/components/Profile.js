@@ -23,7 +23,7 @@ const MissionProfile = () => {
   );
 };
 
-// const RocketsProfile = () => {
+const RocketsProfile = () => {
   const rockets = useSelector((state) => state.rockets.rocket);
   const reservedRocket = Array.isArray(rockets) ? rockets.filter((rocket) => rocket.reserved) : [];
 

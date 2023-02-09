@@ -16,31 +16,30 @@ const RocketsList = ({
         <div className="rocketInfo">
           <h3>{title}</h3>
           {
-            reserved 
-            ? 
-              <p>
-                <span id="reserved">{confirmReservation}</span>
-                {description}
-              </p>
-            : 
-              <p>
-                <span id="not-reserved">{confirmReservation}</span>
-                {description}
-              </p>
+            reserved
+              ? (
+                <p>
+                  <span id="reserved">{confirmReservation}</span>
+                  {description}
+                </p>
+              )
+              : (
+                <p>
+                  <span id="not-reserved">{confirmReservation}</span>
+                  {description}
+                </p>
+              )
           }
           {
-            reserved 
-            ? 
-              <button className="reserveBtn" id="cancel" type="button" onClick={HandlerBtn}>Cancel Reservation</button>
-            : 
-              <button className="reserveBtn" id="reserve" type="button" onClick={HandlerBtn}>Reserve Rocket</button>
+            reserved
+              ? <button className="reserveBtn" id="cancel" type="button" onClick={HandlerBtn}>Cancel Reservation</button>
+              : <button className="reserveBtn" id="reserve" type="button" onClick={HandlerBtn}>Reserve Rocket</button>
           }
         </div>
       </div>
     </div>
   );
 };
-
 
 RocketsList.propTypes = {
   title: PropTypes.string.isRequired,

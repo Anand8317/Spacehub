@@ -1,6 +1,6 @@
-import React from "react";
-import Table from "react-bootstrap/Table";
-import { useSelector } from "react-redux";
+import React from 'react';
+import Table from 'react-bootstrap/Table';
+import { useSelector } from 'react-redux';
 
 const MissionProfile = () => {
   const mission = useSelector((state) => state.missions);
@@ -26,7 +26,7 @@ const MissionProfile = () => {
 const RocketsProfile = () => {
   const rockets = useSelector((state) => state.rockets.rocket);
   const reservedRocket = Array.isArray(rockets) ? rockets.filter((rocket) => rocket.reserved) : [];
-  console.log(reservedRocket);
+
   return (
     <div className="rocket-table">
       <h2>My Rockets</h2>
@@ -37,8 +37,9 @@ const RocketsProfile = () => {
               <tr key={rocket.id}>
                 <td>{rocket.name}</td>
               </tr>
-            ))}
-      
+            ))
+}
+
         </tbody>
       </Table>
     </div>

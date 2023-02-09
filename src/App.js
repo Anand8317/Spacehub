@@ -4,9 +4,16 @@ import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
 import Profile from './pages/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useDispatch } from 'react-redux';
+import { showRockets } from './redux/rockets/rockets';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(showRockets());
+  }, [dispatch]);
   return (
     <div>
       <BrowserRouter>

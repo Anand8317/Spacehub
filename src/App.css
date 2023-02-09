@@ -65,17 +65,10 @@ h3 {
   margin-top: 0;
 }
 
-.reserveBtn {
-  padding: 1%;
-  color: white;
-  background: rgb(20, 131, 196);
-  border-radius: 10px;
-  border: none;
-}
-
 #reserved {
   background: rgb(75, 172, 236);
-  padding: 0.5rem;
+  padding: 0.3rem;
+  font-weight: bold;
   margin-right: 10px;
   border-radius: 5px;
   color: white;
@@ -86,6 +79,16 @@ h3 {
   color: white;
   border: none;
   padding: 1%;
+  border-radius: 5px;
+}
+
+#cancel {
+  background: #ffffff;
+  color: #808080;
+  border: none;
+  border: 2px solid #808080;
+  padding: 1%;
+  font-size: 1.1rem;
   border-radius: 5px;
 }
 

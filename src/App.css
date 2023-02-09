@@ -28,6 +28,12 @@ ul {
 
 .logo-pic {
   width: 9%;
+  animation: rotatelogo 5s linear infinite;
+}
+
+@keyframes rotatelogo {
+  50% {transform: rotate(200deg);}
+
 }
 
 li {

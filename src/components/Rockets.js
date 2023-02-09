@@ -5,7 +5,7 @@ import { reserveRocket } from '../redux/rockets/rockets';
 const RocketsList = ({
   id, title, description, image, reserved, confirmReservation,
 }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const HandlerBtn = () => {
     dispatch(reserveRocket(id));
   };

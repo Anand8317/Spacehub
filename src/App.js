@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   useEffect(() => {
     dispatch(showRockets());
   }, [dispatch]);
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

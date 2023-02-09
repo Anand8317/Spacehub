@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import Navigation from '../components/navigation';
+import Navigation from '../components/Navigation';
 import store from '../redux/configureStore';
 
 const App = () => {

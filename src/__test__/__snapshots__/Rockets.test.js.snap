@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    className="rocketContainer"
+  >
+    <img />
+    <div
+      className="rocketInfo"
+    >
+      <h3 />
+      <p>
+        <span
+          id="not-reserved"
+        />
+      </p>
+      <button
+        className="reserveBtn"
+        id="reserve"
+        onClick={[Function]}
+        type="button"
+      >
+        Reserve Rocket
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`rockets list renders properly 1`] = `
+<div>
+  <div
+    className="rocketContainer"
+  >
+    <img />
+    <div
+      className="rocketInfo"
+    >
+      <h3 />
+      <p>
+        <span
+          id="not-reserved"
+        />
+      </p>
+      <button
+        className="reserveBtn"
+        id="reserve"
+        onClick={[Function]}
+        type="button"
+      >
+        Reserve Rocket
+      </button>
+    </div>
+  </div>
+</div>
+`;

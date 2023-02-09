@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar,
+.rocketContainer {
+  padding: 1% 4%;
+}
+
+.links,
+.logo,
+ul {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.links {
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.logo,
+ul {
+  gap: 20px;
+}
+
+.logo-pic {
+  width: 9%;
+  animation: rotatelogo 5s linear infinite;
+}
+
+@keyframes rotatelogo {
+  50% { transform: rotate(200deg); }
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: rgb(18, 125, 212);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: rgb(18, 212, 186);
+}
+
+li:last-child {
+  border-left: 2px solid rgb(148, 148, 153);
+  padding-left: 12px;
+}
+
+.rocketContainer {
+  display: flex;
+  gap: 20px;
+  width: 98%;
+  margin-left: 2%;
+}
+
+.rocketContainer img {
+  width: 25%;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+#reserved {
+  background: rgb(75, 172, 236);
+  padding: 0.3rem;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+#reserve {
+  background: rgb(0, 106, 255);
+  color: white;
+  border: none;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+#cancel {
+  background: #fff;
+  color: #808080;
+  border: none;
+  border: 2px solid #808080;
+  padding: 1%;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.link-active {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.table1 {
+  width: 95% !important;
+  margin: 0 auto;
+}
+
+.btn-container {
+  position: relative;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.am-btn {
+  background-color: #18a2b8 !important;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mission-table,
+.rocket-table {
+  width: 30% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-pic {
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  li a {
+    font-size: 0.7rem;
+  }
+
+  .rocketContainer {
+    margin: 40px 0;
+  }
+
+  h3,
+  th {
+    color: rgb(58, 74, 88);
+  }
+
+  .rocketContainer img {
+    width: 150px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #reserve,
+  #cancel,
+  #reserved {
+    font-size: 0.8rem;
+  }
+
+  .missionName,
+  .missionDesc {
+    font-size: 0.7rem;
+  }
+
+  .missionName {
+    font-weight: bolder;
+  }
+
+  .btn {
+    font-size: 0.4rem;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: rgb(85, 43, 30);
+  }
+}

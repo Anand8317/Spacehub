@@ -23,10 +23,10 @@ const MissionItem = (props) => {
     <tr id={id}>
       <td>{missionName}</td>
       <td>{missionDesc}</td>
-      <td width={150}>
-        { reserved ? <Button variant="primary" className="am-btn" size="sm">ACTIVE MEMBER</Button> : <Button variant="secondary" className="center" size="sm">NOT A MEMBER </Button> }
+      <td width={150} className="btn-container">
+        { reserved ? <Button variant="primary" className="am-btn center" size="sm">ACTIVE MEMBER</Button> : <Button variant="secondary" className="center" size="sm">NOT A MEMBER </Button> }
       </td>
-      <td width={150}>
+      <td width={150} className="btn-container">
         { reserved ? <Button variant="outline-danger" className="center" size="sm" onClick={clickHandler}>LEAVE MISSION</Button> : <Button variant="outline-secondary" className="center" size="sm" onClick={clickHandler}>JOIN MISSION</Button> }
       </td>
     </tr>

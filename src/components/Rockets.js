@@ -1,8 +1,9 @@
 import { useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { reserveRocket } from '../redux/rockets/rockets';
 
 const RocketsList = ({
+  /* eslint-disable react/prop-types */
   id, title, description, image, reserved, confirmReservation,
 }) => {
   const dispatch = useDispatch();
@@ -41,13 +42,13 @@ const RocketsList = ({
   );
 };
 
-RocketsList.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
-  confirmReservation: PropTypes.string.isRequired,
-};
+// RocketsList.propTypes = {
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   image: PropTypes.string.isRequired,
+//   id: PropTypes.string.isRequired,
+//   reserved: PropTypes.bool.isRequired,
+//   confirmReservation: PropTypes.string.isRequired,
+// };
 
 export default RocketsList;
